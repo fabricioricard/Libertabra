@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #FFC107; /* Amarelo libertário */
+  --secondary: #1A3C34; /* Verde escuro sustentável */
+  --accent: #000000; /* Preto */
+}
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
