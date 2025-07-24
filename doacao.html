@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Faça uma doação para a Cidade Libertabra" />
+  <title>Doações - Libertabra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Logo Libertabra" class="logo" />
+    </a>
+    <nav>
+      <a href="index.html" aria-label="Página Inicial">Início</a>
+      <a href="projeto.html" aria-label="Sobre o Projeto">Projeto</a>
+      <a href="sobre.html" aria-label="Sobre Nós">Sobre</a>
+      <a href="doacao.html" aria-label="Doações" class="active">Doações</a>
+    </nav>
+  </header>
+
+  <section class="doacao">
+    <div class="container">
+      <h1>Apoie a Cidade Libertária</h1>
+      <p>Sua doação é essencial para construir uma cidade baseada na liberdade e sustentabilidade. Escolha uma das opções abaixo ou entre em contato para investimentos maiores.</p>
+      <div class="doacao-options">
+        <div class="doacao-card">
+          <h3>Pix</h3>
+          <p>Chave: doacoes@libertabra.org</p>
+          <button class="btn btn-primary" onclick="copyToClipboard('doacoes@libertabra.org')">Copiar Chave</button>
+        </div>
+        <div class="doacao-card">
+          <h3>Bitcoin</h3>
+          <p>Endereço: bc1qxyz1234567890</p>
+          <button class="btn btn-primary" onclick="copyToClipboard('bc1qxyz1234567890')">Copiar Endereço</button>
+        </div>
+        <div class="doacao-card">
+          <h3>Ethereum</h3>
+          <p>Endereço: 0x1234567890abcdef</p>
+          <button class="btn btn-primary" onclick="copyToClipboard('0x1234567890abcdef')">Copiar Endereço</button>
+        </div>
+      </div>
+      <a href="mailto:invest@libertabra.org" class="btn btn-secondary">Quero Investir</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Libertabra. Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="https://t.me/libertabra" target="_blank" rel="noopener noreferrer" aria-label="Telegram da Libertabra">
+          <img src="https://img.icons8.com/ios-filled/50/FFC107/telegram-app.png" alt="Telegram" class="social-icon">
+        </a>
+        <a href="https://x.com/libertabra" target="_blank" rel="noopener noreferrer" aria-label="X da Libertabra">
+          <img src="https://img.icons8.com/ios-filled/50/000000/x.png" alt="X" class="social-icon">
+        </a>
+        <a href="https://discord.gg/libertabra" target="_blank" rel="noopener noreferrer" aria-label="Discord da Libertabra">
+          <img src="https://img.icons8.com/ios-filled/50/586069/discord-logo.png" alt="Discord" class="social-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copiado para a área de transferência!');
+      }).catch(err => {
+        alert('Erro ao copiar: ' + err);
+      });
+    }
+  </script>
+</body>
+</html>
