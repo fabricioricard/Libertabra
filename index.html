@@ -64,14 +64,14 @@
 
   <!-- Script para copiar endereço -->
   <script>
-    function copyToClipboard() {
-      const text = document.getElementById("wallet-address").textContent;
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Endereço copiado para a área de transferência!');
-      }).catch(err => {
-        alert('Erro ao copiar: ' + err);
-      });
-    }
-  </script>
+  function copyToClipboard() {
+    const walletAddress = document.getElementById("wallet-address").innerText;
+    navigator.clipboard.writeText(walletAddress).then(() => {
+      alert('Endereço copiado com sucesso!');
+    }).catch(err => {
+      alert('Erro ao copiar: ' + err);
+    });
+  }
+</script>
 </body>
 </html>
