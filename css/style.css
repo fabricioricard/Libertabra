@@ -74,6 +74,20 @@ nav a:hover, nav a.active {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.hero-logo {
+  max-width: 150px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
 .hero p {
   font-size: 1.3rem;
   max-width: 700px;
@@ -88,7 +102,7 @@ nav a:hover, nav a.active {
   text-align: left;
 }
 
-.hero img {
+.hero img:not(.hero-logo) {
   max-width: 100%;
   height: auto;
   border-radius: 1rem;
@@ -97,7 +111,7 @@ nav a:hover, nav a.active {
   transition: transform 0.3s ease;
 }
 
-.hero img:hover {
+.hero img:not(.hero-logo):hover {
   transform: scale(1.02);
 }
 
@@ -254,12 +268,16 @@ footer .container {
     font-size: 2.5rem;
   }
 
+  .hero-logo {
+    max-width: 120px;
+  }
+
   .hero p, .doacao p {
     font-size: 1rem;
     padding: 0 1rem;
   }
 
-  .hero img {
+  .hero img:not(.hero-logo) {
     max-width: 90%;
   }
 
@@ -281,6 +299,10 @@ footer .container {
 
   .hero h1 {
     font-size: 2rem;
+  }
+
+  .hero-logo {
+    max-width: 100px;
   }
 
   .cta-button, .btn {
