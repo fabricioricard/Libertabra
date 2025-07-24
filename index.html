@@ -21,27 +21,31 @@
     </nav>
   </header>
 
+  <!-- Seção principal com logo e chamada -->
   <section class="hero">
     <h1>Libertabra</h1>
     <img src="images/logo.png" alt="Logo Libertabra" class="hero-logo" />
-    <p>Uma nova proposta de comunidade autônoma, livre e conectada com o futuro.</p>
-    <a href="projeto.html" class="cta-button">Saiba Mais</a>
+    <p>Uma cidade autossustentável, descentralizada e construída com base na liberdade individual e na inovação tecnológica.</p>
+    <a href="projeto.html" class="cta-button">Conheça o Projeto</a>
   </section>
 
+  <!-- Seção de doação -->
   <section class="doacao">
     <div class="container">
-      <h2>Apoie a construção da nossa cidade</h2>
-      <p>Sua doação ajuda a tornar a Libertabra realidade. Contribua com BIG na rede Solana.</p>
+      <h2>Contribua para construir a Libertabra</h2>
+      <p>Sua doação nos ajuda a transformar a visão em realidade. Aceitamos doações em <strong>BIG</strong>, nosso token oficial na blockchain da Solana.</p>
+      
       <div class="doacao-options">
         <div class="doacao-card">
-          <h3>BIG (Solana Blockchain)</h3>
-          <p>Endereço: 6CSsCjYKGoipakKy623KaET6tMscMgP6UQ5vxJgGSBVq</p>
-          <button class="btn btn-primary" onclick="copyToClipboard('big1234567890')">Copiar Endereço</button>
+          <h3>Endereço da Carteira (BIG – Solana)</h3>
+          <p id="wallet-address">6CSsCjYKGoipakKy623KaET6tMscMgP6UQ5vxJgGSBVq</p>
+          <button class="btn btn-primary" onclick="copyToClipboard()">Copiar Endereço</button>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Rodapé com ícones sociais -->
   <footer>
     <div class="container">
       <p>© 2025 Libertabra. Todos os direitos reservados.</p>
@@ -59,10 +63,12 @@
     </div>
   </footer>
 
+  <!-- Script para copiar endereço -->
   <script>
-    function copyToClipboard(text) {
+    function copyToClipboard() {
+      const text = document.getElementById("wallet-address").textContent;
       navigator.clipboard.writeText(text).then(() => {
-        alert('Copiado para a área de transferência!');
+        alert('Endereço copiado para a área de transferência!');
       }).catch(err => {
         alert('Erro ao copiar: ' + err);
       });
