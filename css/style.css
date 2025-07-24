@@ -20,6 +20,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* Header */
 header {
   background: var(--primary);
@@ -35,7 +42,7 @@ header {
 }
 
 .logo {
-  height: 40px; /* Ajuste conforme o tamanho do logo */
+  height: 40px;
 }
 
 nav a {
@@ -46,7 +53,7 @@ nav a {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
   color: var(--text-light);
   transform: translateY(-2px);
 }
@@ -72,6 +79,13 @@ nav a:hover {
   max-width: 700px;
   margin: 0 auto 2rem;
   opacity: 0.9;
+}
+
+.hero ul {
+  list-style: disc;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-align: left;
 }
 
 .hero img {
@@ -104,6 +118,83 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
+/* Doação Section */
+.doacao {
+  padding: 3rem 0;
+  text-align: center;
+  background: #fff;
+}
+
+.doacao h1, .doacao h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.doacao p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.doacao-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.doacao-card {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.doacao-card:hover {
+  transform: translateY(-5px);
+}
+
+.doacao-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.doacao-card p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--accent);
+}
+
+.btn-primary:hover {
+  background: #e0a800;
+}
+
+.btn-secondary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--accent);
+}
+
 /* Footer */
 footer {
   background: var(--primary);
@@ -113,6 +204,28 @@ footer {
   margin-top: 3rem;
   font-size: 0.9rem;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
 }
 
 /* Animations */
@@ -141,13 +254,18 @@ footer {
     font-size: 2.5rem;
   }
 
-  .hero p {
+  .hero p, .doacao p {
     font-size: 1rem;
     padding: 0 1rem;
   }
 
   .hero img {
     max-width: 90%;
+  }
+
+  .doacao-options {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -165,7 +283,7 @@ footer {
     font-size: 2rem;
   }
 
-  .cta-button {
+  .cta-button, .btn {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
   }
