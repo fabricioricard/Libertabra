@@ -43,6 +43,11 @@ header {
 
 .logo {
   height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 nav a {
@@ -62,23 +67,30 @@ nav a:hover, nav a.active {
 .hero {
   background: linear-gradient(135deg, var(--secondary), #2a5b52);
   color: var(--text-light);
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
   color: var(--primary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.9;
 }
 
 .hero img {
   max-width: 100%;
   height: auto;
-  border-radius: 1rem;
-  border: 4px solid var(--primary);
+  border-radius: 10px;
+  border: 3px solid var(--primary);
   box-shadow: var(--shadow);
   transition: transform 0.3s ease;
 }
@@ -87,18 +99,56 @@ nav a:hover, nav a.active {
   transform: scale(1.02);
 }
 
-.hero p {
-  font-size: 1.3rem;
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  opacity: 0.9;
+.hero-logo {
+  max-width: 150px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
 }
 
-.hero ul {
-  list-style: disc;
-  max-width: 700px;
-  margin: 0 auto 2rem;
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
+.hero .hero-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  color: var(--accent);
   text-align: left;
+  max-width: 800px;
+  margin: 1.5rem auto;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--accent);
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content ul {
+  list-style: disc;
+  margin: 0 0 1.5rem 2rem;
+}
+
+.hero-content ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .cta-button {
@@ -118,37 +168,81 @@ nav a:hover, nav a.active {
   transform: translateY(-3px);
 }
 
-/* Project Details Section */
-.project-details {
-  padding: 4rem 0;
-  background: #fff;
+/* Doação Section */
+.doacao {
+  padding: 3rem 0;
   text-align: center;
+  background: #fff;
 }
 
-.project-details h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--secondary);
-}
-
-.project-details h3 {
-  font-size: 1.8rem;
-  margin: 2rem 0 1rem;
+.doacao h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
   color: var(--accent);
 }
 
-.project-details p {
-  font-size: 1.2rem;
+.doacao p {
+  font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto 1.5rem;
 }
 
-.project-details ul {
-  list-style: disc;
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  text-align: left;
-  padding-left: 2rem;
+.doacao-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.doacao-card {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.doacao-card:hover {
+  transform: translateY(-5px);
+}
+
+.doacao-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.doacao-card p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--accent);
+}
+
+.btn-primary:hover {
+  background: #e0a800;
+}
+
+.btn-secondary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--accent);
 }
 
 /* Footer */
@@ -178,7 +272,6 @@ footer .container {
   width: 30px;
   height: 30px;
   transition: transform 0.3s ease;
-  object-fit: contain;
 }
 
 .social-icon:hover {
@@ -208,24 +301,26 @@ footer .container {
   }
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 
   .hero img {
     max-width: 90%;
   }
 
-  .hero p, .project-details p {
-    font-size: 1rem;
-    padding: 0 1rem;
+  .hero .hero-content {
+    max-width: 90%;
+    padding: 1rem;
   }
 
-  .project-details h2 {
-    font-size: 2rem;
-  }
-
-  .project-details h3 {
-    font-size: 1.5rem;
+  .doacao-options {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -240,23 +335,30 @@ footer .container {
   }
 
   .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero img {
-    max-width: 80%;
+    font-size: 1.8rem;
   }
 
   .cta-button, .btn {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
   }
+}
 
-  .project-details h2 {
-    font-size: 1.8rem;
-  }
+/* Ajustes para exibir corretamente o endereço longo */
+.wallet-address {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  word-break: break-all;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  color: #333;
+}
 
-  .project-details h3 {
-    font-size: 1.3rem;
-  }
+/* Ajuste na largura do card para evitar quebras de linha feias */
+.doacao-card {
+  width: 100%;
+  max-width: 300px;
 }
