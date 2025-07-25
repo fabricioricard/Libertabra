@@ -29,18 +29,18 @@
 
   <!-- Seção de doação -->
   <section class="doacao">
-  <div class="container">
-    <h2>Apoie a construção da nossa cidade</h2>
-    <p>Sua doação ajuda a tornar a Libertabra realidade. Contribua com <strong>BIG</strong> na rede Solana.</p>
-    <div class="doacao-options">
-      <div class="doacao-card">
-        <h3>Endereço da Carteira (BIG – Solana)</h3>
-        <p id="wallet-address" class="wallet-address">6CSsCjYKGoipakKy623KaET6tMscMgP6UQ5vxJgGSBVq</p>
-        <button class="btn btn-primary" onclick="copyToClipboard()">Copiar Endereço</button>
+    <div class="container">
+      <h2>Apoie a construção da nossa cidade</h2>
+      <p>Sua doação ajuda a tornar a Libertabra realidade. Contribua com <strong>BIG</strong> na rede Solana.</p>
+      <div class="doacao-options">
+        <div class="doacao-card">
+          <h3>Endereço da Carteira (BIG – Solana)</h3>
+          <p id="wallet-address" class="wallet-address">6CSsCjYKGoipakKy623KaET6tMscMgP6UQ5vxJgGSBVq</p>
+          <button class="btn btn-primary" onclick="copyToClipboard()">Copiar Endereço</button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Rodapé com ícones sociais -->
   <footer>
@@ -51,7 +51,7 @@
           <img src="https://img.icons8.com/color/50/telegram-app.png" alt="Telegram" class="social-icon">
         </a>
         <a href="https://x.com/libertabra" target="_blank" rel="noopener noreferrer" aria-label="X da Libertabra">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/X_logo_2023.svg" alt="X" class="social-icon">
+          <img src="https://img.icons8.com/fluency/50/000000/twitter.png" alt="X" class="social-icon">
         </a>
         <a href="https://discord.gg/libertabra" target="_blank" rel="noopener noreferrer" aria-label="Discord da Libertabra">
           <img src="https://img.icons8.com/ios-filled/50/586069/discord-logo.png" alt="Discord" class="social-icon">
@@ -62,14 +62,14 @@
 
   <!-- Script para copiar endereço -->
   <script>
-  function copyToClipboard() {
-    const walletAddress = document.getElementById("wallet-address").innerText;
-    navigator.clipboard.writeText(walletAddress).then(() => {
-      alert('Endereço copiado com sucesso!');
-    }).catch(err => {
-      alert('Erro ao copiar: ' + err);
-    });
-  }
-</script>
+    function copyToClipboard() {
+      const walletAddress = document.getElementById("wallet-address").innerText;
+      navigator.clipboard.writeText(walletAddress).then(() => {
+        alert('Endereço copiado com sucesso!');
+      }).catch(err => {
+        alert('Erro ao copiar: ' + err);
+      });
+    }
+  </script>
 </body>
 </html>
