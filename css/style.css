@@ -62,36 +62,43 @@ nav a:hover, nav a.active {
 .hero {
   background: linear-gradient(135deg, var(--secondary), #2a5b52);
   color: var(--text-light);
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
   color: var(--primary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-  opacity: 0.9;
 }
 
 .hero img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  border: 3px solid var(--primary);
+  border-radius: 1rem;
+  border: 4px solid var(--primary);
   box-shadow: var(--shadow);
   transition: transform 0.3s ease;
 }
 
 .hero img:hover {
   transform: scale(1.02);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+.hero ul {
+  list-style: disc;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-align: left;
 }
 
 .cta-button {
@@ -111,81 +118,37 @@ nav a:hover, nav a.active {
   transform: translateY(-3px);
 }
 
-/* Doação Section */
-.doacao {
-  padding: 3rem 0;
-  text-align: center;
+/* Project Details Section */
+.project-details {
+  padding: 4rem 0;
   background: #fff;
+  text-align: center;
 }
 
-.doacao h1, .doacao h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+.project-details h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary);
+}
+
+.project-details h3 {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
   color: var(--accent);
 }
 
-.doacao p {
-  font-size: 1.1rem;
+.project-details p {
+  font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto 1.5rem;
 }
 
-.doacao-options {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.doacao-card {
-  background: #f4f4f4;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-  width: 250px;
-  transition: transform 0.3s ease;
-}
-
-.doacao-card:hover {
-  transform: translateY(-5px);
-}
-
-.doacao-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  color: var(--secondary);
-}
-
-.doacao-card p {
-  margin-bottom: 1rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.btn-primary {
-  background: var(--primary);
-  color: var(--accent);
-}
-
-.btn-primary:hover {
-  background: #e0a800;
-}
-
-.btn-secondary {
-  border: 2px solid var(--primary);
-  color: var(--primary);
-}
-
-.btn-secondary:hover {
-  background: var(--primary);
-  color: var(--accent);
+.project-details ul {
+  list-style: disc;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: left;
+  padding-left: 2rem;
 }
 
 /* Footer */
@@ -215,6 +178,7 @@ footer .container {
   width: 30px;
   height: 30px;
   transition: transform 0.3s ease;
+  object-fit: contain;
 }
 
 .social-icon:hover {
@@ -244,21 +208,24 @@ footer .container {
   }
 
   .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-    padding: 0 1rem;
+    font-size: 2.5rem;
   }
 
   .hero img {
     max-width: 90%;
   }
 
-  .doacao-options {
-    flex-direction: column;
-    align-items: center;
+  .hero p, .project-details p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .project-details h2 {
+    font-size: 2rem;
+  }
+
+  .project-details h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -273,30 +240,23 @@ footer .container {
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .hero img {
+    max-width: 80%;
   }
 
   .cta-button, .btn {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
   }
-}
 
-/* Ajustes para exibir corretamente o endereço longo */
-.wallet-address {
-  font-family: 'Courier New', monospace;
-  font-size: 1rem;
-  background: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  word-break: break-all;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-  color: #333;
-}
+  .project-details h2 {
+    font-size: 1.8rem;
+  }
 
-/* Ajuste na largura do card para evitar quebras de linha feias */
-.doacao-card {
-  width: 100%;
-  max-width: 300px;
+  .project-details h3 {
+    font-size: 1.3rem;
+  }
 }
