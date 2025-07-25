@@ -42,7 +42,7 @@ header {
 }
 
 .logo {
-  height: 40px;
+  height: 80px; /* Reduzido de 150px (ajustado para 80px como exemplo, pode ser menor se preferir) */
   transition: transform 0.3s ease;
 }
 
@@ -87,7 +87,7 @@ nav a:hover, nav a.active {
 }
 
 .hero img {
-  max-width: 100%;
+  max-width: 80%; /* Ajustado para limitar o tamanho da imagem da cidade em projeto.html */
   height: auto;
   border-radius: 10px;
   border: 3px solid var(--primary);
@@ -100,7 +100,7 @@ nav a:hover, nav a.active {
 }
 
 .hero-logo {
-  max-width: 150px;
+  max-width: 150px; /* Mantido o tamanho original da logo na página inicial */
   height: auto;
   margin: 1rem auto;
   display: block;
@@ -349,12 +349,13 @@ footer .container {
   font-family: 'Courier New', monospace;
   font-size: 1rem;
   background: #fff;
-  padding: 1rem;
+  padding: 1.5rem; /* Aumentado para uma caixa maior */
   border-radius: 8px;
   word-break: break-all;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
   color: #333;
+  max-width: 100%; /* Garante que a caixa se adapte ao conteúdo */
 }
 
 /* Ajuste na largura do card para evitar quebras de linha feias */
