@@ -42,7 +42,7 @@ header {
 }
 
 .logo {
-  height: 40px; /* Reduzido de 50px para 40px */
+  height: 30px; /* Reduzido de 40px para 30px */
   transition: transform 0.3s ease;
 }
 
@@ -87,7 +87,7 @@ nav a:hover, nav a.active {
 }
 
 .hero img {
-  max-width: 40%; /* Reduzido de 50% para 40% para a imagem da cidade em projeto.html */
+  max-width: 30%; /* Reduzido de 40% para 30% para a imagem da cidade em projeto.html */
   height: auto;
   border-radius: 10px;
   border: 3px solid var(--primary);
