@@ -365,3 +365,22 @@ footer .container {
   width: 100%;
   max-width: 300px;
 }
+
+/* QR Code */
+.qr-code {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.qr-image {
+  width: 160px;
+  height: 160px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.qr-image:hover {
+  transform: scale(1.05);
+}
