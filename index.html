@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Libertabra: Comunidade libertária para uma cidade privada autossustentável" />
   <title>Libertabra</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -31,12 +32,20 @@
   <section class="doacao">
     <div class="container">
       <h2>Apoie a construção da nossa cidade</h2>
-      <p>Sua doação ajuda a tornar a Libertabra realidade. Contribua com <strong>BIG</strong> na rede Solana.</p>
+      <p>Sua doação ajuda a tornar a Libertabra realidade. Contribua com <strong>BIG</strong> na rede Solana ou <strong>NANO</strong>.</p>
       <div class="doacao-options">
+        <!-- BIG Wallet -->
         <div class="doacao-card">
           <h3>Endereço da Carteira (BIG – Solana)</h3>
-          <p id="wallet-address" class="wallet-address">6CSsCjYKGoipakKy623KaET6tMscMgP6UQ5vxJgGSBVq</p>
-          <button class="btn btn-primary" onclick="copyToClipboard()">Copiar Endereço</button>
+          <p id="wallet-big" class="wallet-address">6CSsCjYKGoipakKy623KaET6tMscMgP6UQ5vxJgGSBVq</p>
+          <button class="btn btn-primary" onclick="copyToClipboard('wallet-big')">Copiar Endereço</button>
+        </div>
+
+        <!-- NANO Wallet -->
+        <div class="doacao-card">
+          <h3>Endereço da Carteira (NANO)</h3>
+          <p id="wallet-nano" class="wallet-address">nano_3t8z5f1cd8e4wftu4xdr38krs8o9bxpi1e6e1wdkk37e9rfjb89qqfc9xw6o</p>
+          <button class="btn btn-primary" onclick="copyToClipboard('wallet-nano')">Copiar Endereço</button>
         </div>
       </div>
     </div>
@@ -59,8 +68,8 @@
 
   <!-- Script para copiar endereço -->
   <script>
-    function copyToClipboard() {
-      const walletAddress = document.getElementById("wallet-address").innerText;
+    function copyToClipboard(id) {
+      const walletAddress = document.getElementById(id).innerText;
       navigator.clipboard.writeText(walletAddress).then(() => {
         alert('Endereço copiado com sucesso!');
       }).catch(err => {
