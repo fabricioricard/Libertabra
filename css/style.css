@@ -1,0 +1,386 @@
+:root {
+  --primary: #FFC107;
+  --secondary: #1A3C34;
+  --accent: #000000;
+  --text-light: #ffffff;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f4f4f4;
+  color: var(--accent);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: var(--primary);
+  color: var(--accent);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 30px; /* Mantido em 30px como solicitado */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+nav a {
+  margin: 0 1.5rem;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+  color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--secondary), #2a5b52);
+  color: var(--text-light);
+  padding: 4rem 2rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  opacity: 0.9;
+}
+
+.hero img {
+  max-width: 25%; /* Reduzido de 30% para 25% para a imagem da cidade em projeto.html */
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid var(--primary);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.02);
+}
+
+.hero-logo {
+  max-width: 150px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
+.hero .hero-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  color: var(--accent);
+  text-align: left;
+  max-width: 800px;
+  margin: 1.5rem auto;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--accent);
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content ul {
+  list-style: disc;
+  margin: 0 0 1.5rem 2rem;
+}
+
+.hero-content ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: var(--primary);
+  color: var(--accent);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e0a800;
+  transform: translateY(-3px);
+}
+
+/* Doação Section */
+.doacao {
+  padding: 3rem 0;
+  text-align: center;
+  background: #fff;
+}
+
+.doacao h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.doacao p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.doacao-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.doacao-card {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.doacao-card:hover {
+  transform: translateY(-5px);
+}
+
+.doacao-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.doacao-card p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--accent);
+}
+
+.btn-primary:hover {
+  background: #e0a800;
+}
+
+.btn-secondary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--accent);
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: var(--secondary);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .hero img {
+    max-width: 90%;
+  }
+
+  .hero .hero-content {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .doacao-options {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 30px;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta-button, .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Ajustes para exibir corretamente o endereço longo */
+.wallet-address {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem; /* Aumentado para melhorar legibilidade */
+  background: #fff;
+  padding: 2rem; /* Aumentado de 1.5rem para 2rem para uma caixa maior */
+  border-radius: 10px; /* Aumentado para um visual mais suave */
+  border: 2px solid var(--primary); /* Adicionado borda para destaque */
+  word-break: break-all;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra interna mais pronunciada */
+  margin-bottom: 1.5rem; /* Aumentado para espaçamento */
+  color: #333;
+  max-width: 100%;
+  text-align: center; /* Centralizado para melhor apresentação */
+}
+
+/* Ajuste na largura do card para evitar quebras de linha feias */
+.doacao-card {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* QR Code */
+.qr-code {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.qr-image {
+  width: 160px;
+  height: 160px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.qr-image:hover {
+  transform: scale(1.05);
+}
