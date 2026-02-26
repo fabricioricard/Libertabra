@@ -114,7 +114,7 @@ export default function Home() {
             <span className="section-tag">Apoie</span>
             <h2>Apoie a construção da nossa cidade</h2>
             <p className="section-desc">
-              Sua doação ajuda a tornar a Libertabra realidade. Contribua com <strong>NANO (XNO)</strong>.
+              Sua doação ajuda a tornar Libertabra realidade. Contribua com <strong>NANO (XNO)</strong>.
             </p>
             <div className="doacao-options">
               <div className="doacao-card">
