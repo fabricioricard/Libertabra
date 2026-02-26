@@ -73,7 +73,7 @@ export default function Home() {
               <div className="sobre-card">
                 <div className="sobre-icon">🔓</div>
                 <h3>Liberdade Real</h3>
-                <p>Uma comunidade libertária que se organiza através de encontros, debates e estudo.</p>
+                <p>Uma comunidade que se organiza através de encontros, debates e estudo.</p>
               </div>
               <div className="sobre-card">
                 <div className="sobre-icon">🌱</div>
@@ -83,7 +83,7 @@ export default function Home() {
               <div className="sobre-card">
                 <div className="sobre-icon">🤝</div>
                 <h3>Voluntária</h3>
-                <p>Participação 100% voluntária, sem hierarquia e sem imposições.</p>
+                <p>Participação 100% voluntária, sem imposições.</p>
               </div>
             </div>
           </div>
