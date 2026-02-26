@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container">
         <p>© 2025 Libertabra. Todos os direitos reservados.</p>
         <div className="social-icons">
-          
+          <a
             href="https://x.com/libertabra"
             target="_blank"
             rel="noopener noreferrer"
@@ -16,7 +16,7 @@ export default function Footer() {
               className="social-icon"
             />
           </a>
-          
+          <a
             href="https://discord.gg/deGN8UM53e"
             target="_blank"
             rel="noopener noreferrer"
