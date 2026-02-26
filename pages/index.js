@@ -48,7 +48,7 @@ export default function Home() {
               responsabilidade e construção voluntária.
             </p>
             <p className="hero-sub">
-              A cidade é um projeto. A comunidade é o começo.
+              A cidade é o propósito final. A comunidade é o começo.
             </p>
             <a
               href="https://t.me/+4YqLfte5yS9mZTQx"
@@ -94,7 +94,7 @@ export default function Home() {
             <span className="section-tag">Protocolo</span>
             <h2>Reuniões Semanais</h2>
             <p className="section-desc">
-              Realizamos reuniões presenciais a cada 15 dias,
+              Realizamos reuniões presenciais a cada 7 dias,
               seguindo o Protocolo Libertabra:
             </p>
             <div className="protocolo-steps">
