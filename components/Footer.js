@@ -4,19 +4,19 @@ export default function Footer() {
       <div className="container">
         <p>© 2025 Libertabra. Todos os direitos reservados.</p>
         <div className="social-icons">
-          <a
-            href="https://t.me/+4YqLfte5yS9mZTQx"
+          
+            href="https://x.com/libertabra"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Telegram da Libertabra"
+            aria-label="X da Libertabra"
           >
             <img
-              src="https://img.icons8.com/color/50/telegram-app.png"
-              alt="Telegram"
+              src="https://img.icons8.com/ios-filled/50/586069/twitterx.png"
+              alt="X"
               className="social-icon"
             />
           </a>
-          <a
+          
             href="https://discord.gg/deGN8UM53e"
             target="_blank"
             rel="noopener noreferrer"
