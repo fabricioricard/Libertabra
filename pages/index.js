@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import BackToTop from '../components/BackToTop'
 
 function CopyButton({ text }) {
   const [copied, setCopied] = useState(false)
@@ -136,6 +137,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <BackToTop />
 
       <style jsx>{`
         .hero {
