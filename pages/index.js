@@ -142,23 +142,19 @@ export default function Home() {
       <Footer />
 
       <style jsx>{`
-        /* Hero animations */
         .hero {
           position: relative;
           overflow: hidden;
         }
-
         .hero-inner {
           opacity: 0;
           transform: translateY(30px);
           transition: opacity 0.8s ease, transform 0.8s ease;
         }
-
         .hero-visible {
           opacity: 1;
           transform: translateY(0);
         }
-
         .hero-glow {
           position: absolute;
           bottom: -80px;
@@ -169,8 +165,6 @@ export default function Home() {
           background: radial-gradient(ellipse, rgba(255, 193, 7, 0.15), transparent 70%);
           pointer-events: none;
         }
-
-        /* Telegram button */
         .telegram-btn {
           display: inline-flex;
           align-items: center;
@@ -188,21 +182,16 @@ export default function Home() {
           transition: transform 0.25s ease, box-shadow 0.25s ease;
           letter-spacing: 0.01em;
         }
-
         .telegram-btn:hover {
           transform: translateY(-3px) scale(1.03);
           box-shadow: 0 8px 30px rgba(255, 193, 7, 0.6);
         }
-
         .telegram-btn svg {
           flex-shrink: 0;
         }
-
-        /* Section shared */
         .section {
           padding: 4rem 0;
         }
-
         .section-tag {
           display: inline-block;
           background: rgba(255, 193, 7, 0.15);
@@ -215,33 +204,27 @@ export default function Home() {
           border-radius: 50px;
           margin-bottom: 0.75rem;
         }
-
         .section h2 {
           font-size: 2rem;
           font-weight: 800;
           color: #1A3C34;
           margin-bottom: 0.75rem;
         }
-
         .section-desc {
           font-size: 1.05rem;
           color: #555;
           max-width: 600px;
           margin-bottom: 2rem;
         }
-
-        /* Sobre grid */
         .sobre-comunidade {
           background: #fff;
         }
-
         .sobre-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
           gap: 1.5rem;
           margin-top: 1.5rem;
         }
-
         .sobre-card {
           background: #f9f9f9;
           border: 1px solid #eee;
@@ -249,49 +232,39 @@ export default function Home() {
           padding: 2rem 1.5rem;
           transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
         }
-
         .sobre-card:hover {
           transform: translateY(-5px);
           box-shadow: 0 10px 30px rgba(0,0,0,0.08);
           border-color: #FFC107;
         }
-
         .sobre-icon {
           font-size: 2rem;
           margin-bottom: 0.75rem;
         }
-
         .sobre-card h3 {
           font-size: 1.1rem;
           font-weight: 700;
           color: #1A3C34;
           margin-bottom: 0.5rem;
         }
-
         .sobre-card p {
           font-size: 0.95rem;
           color: #666;
           line-height: 1.6;
         }
-
-        /* Reuniões */
         .reunioes {
           background: #1A3C34;
           color: #fff;
         }
-
         .reunioes .section-tag {
           background: rgba(255,193,7,0.2);
         }
-
         .reunioes h2 {
           color: #FFC107;
         }
-
         .reunioes .section-desc {
           color: rgba(255,255,255,0.75);
         }
-
         .protocolo-steps {
           display: flex;
           flex-direction: column;
@@ -299,7 +272,6 @@ export default function Home() {
           margin: 1.5rem 0;
           max-width: 480px;
         }
-
         .protocolo-step {
           display: flex;
           align-items: center;
@@ -310,12 +282,10 @@ export default function Home() {
           padding: 0.85rem 1.25rem;
           transition: background 0.2s ease, border-color 0.2s ease;
         }
-
         .protocolo-step:hover {
           background: rgba(255,193,7,0.1);
           border-color: rgba(255,193,7,0.4);
         }
-
         .step-num {
           font-size: 0.8rem;
           font-weight: 800;
@@ -323,40 +293,31 @@ export default function Home() {
           letter-spacing: 0.05em;
           min-width: 28px;
         }
-
         .step-label {
           font-size: 1rem;
           font-weight: 600;
           color: #fff;
         }
-
         .reunioes-sub {
           font-size: 0.95rem;
           color: rgba(255,255,255,0.6);
           font-style: italic;
           margin-top: 0.5rem;
         }
-
-        /* Doação */
         .doacao {
           background: #f4f4f4;
           text-align: center;
         }
-
         .doacao .section-desc {
           margin-inline: auto;
         }
-
-        /* Fade section animation */
         .fade-section {
           animation: fadeUp 0.7s ease both;
         }
-
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(24px); }
           to   { opacity: 1; transform: translateY(0); }
         }
-
         @media (max-width: 600px) {
           .section h2 { font-size: 1.6rem; }
           .telegram-btn { padding: 0.85rem 1.8rem; font-size: 0.95rem; }
