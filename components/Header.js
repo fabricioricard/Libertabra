@@ -13,11 +13,11 @@ export default function Header() {
         <Link href="/" className={router.pathname === '/' ? 'active' : ''}>
           Início
         </Link>
-        <Link href="/projeto" className={router.pathname === '/projeto' ? 'active' : ''}>
-          Projeto
-        </Link>
         <Link href="/protocolo" className={router.pathname === '/protocolo' ? 'active' : ''}>
           Protocolo
+        </Link>
+        <Link href="/projeto" className={router.pathname === '/projeto' ? 'active' : ''}>
+          Projeto
         </Link>
       </nav>
     </header>
