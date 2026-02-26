@@ -68,7 +68,7 @@ export default function Home() {
         <section className="section sobre-comunidade fade-section">
           <div className="container">
             <span className="section-tag">Sobre</span>
-            <h2>O que é a Libertabra?</h2>
+            <h2>O que é Libertabra?</h2>
             <div className="sobre-grid">
               <div className="sobre-card">
                 <div className="sobre-icon">🔓</div>
