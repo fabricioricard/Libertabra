@@ -14,10 +14,10 @@ export default function Header() {
           Início
         </Link>
         <Link href="/protocolo" className={router.pathname === '/protocolo' ? 'active' : ''}>
-          Protocolo
+          Protocolo Libertabra
         </Link>
         <Link href="/projeto" className={router.pathname === '/projeto' ? 'active' : ''}>
-          Projeto
+          Projeto da Cidade Privada
         </Link>
       </nav>
     </header>
