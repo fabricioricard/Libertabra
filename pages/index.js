@@ -39,7 +39,6 @@ export default function Home() {
 
       <main>
 
-        {/* ── Hero ── */}
         <section className="hero">
           <div className={`hero-inner ${visible ? 'hero-visible' : ''}`}>
             <img src="/images/logo.png" alt="Logo Libertabra" className="hero-logo" />
@@ -51,7 +50,7 @@ export default function Home() {
             <p className="hero-sub">
               A cidade é um projeto. A comunidade é o começo.
             </p>
-            
+            <a
               href="https://t.me/+4YqLfte5yS9mZTQx"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,7 +65,6 @@ export default function Home() {
           <div className="hero-glow" />
         </section>
 
-        {/* ── O que é ── */}
         <section className="section sobre-comunidade fade-section">
           <div className="container">
             <span className="section-tag">Sobre</span>
@@ -91,7 +89,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── Reuniões ── */}
         <section className="section reunioes fade-section">
           <div className="container">
             <span className="section-tag">Protocolo</span>
@@ -112,7 +109,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── Doação ── */}
         <section className="section doacao fade-section">
           <div className="container">
             <span className="section-tag">Apoie</span>
@@ -316,7 +312,7 @@ export default function Home() {
         }
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(24px); }
-          to   { opacity: 1; transform: translateY(0); }
+          to { opacity: 1; transform: translateY(0); }
         }
         @media (max-width: 600px) {
           .section h2 { font-size: 1.6rem; }
