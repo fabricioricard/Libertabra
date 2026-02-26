@@ -16,6 +16,9 @@ export default function Header() {
         <Link href="/projeto" className={router.pathname === '/projeto' ? 'active' : ''}>
           Projeto
         </Link>
+        <Link href="/protocolo" className={router.pathname === '/protocolo' ? 'active' : ''}>
+          Protocolo
+        </Link>
       </nav>
     </header>
   )
