@@ -42,7 +42,7 @@ header {
 }
 
 .logo {
-  height: 30px; /* Mantido em 30px como solicitado */
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
@@ -87,7 +87,7 @@ nav a:hover, nav a.active {
 }
 
 .hero img {
-  max-width: 25%; /* Reduzido de 30% para 25% para a imagem da cidade em projeto.html */
+  max-width: 25%;
   height: auto;
   border-radius: 10px;
   border: 3px solid var(--primary);
@@ -199,7 +199,8 @@ nav a:hover, nav a.active {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: var(--shadow);
-  width: 250px;
+  width: 100%;
+  max-width: 300px;
   transition: transform 0.3s ease;
 }
 
@@ -224,6 +225,9 @@ nav a:hover, nav a.active {
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-primary {
@@ -284,6 +288,76 @@ footer .container {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Wallet address */
+.wallet-address {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  word-break: break-all;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  color: #333;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* QR Code */
+.qr-code {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.qr-image {
+  width: 160px;
+  height: 160px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.qr-image:hover {
+  transform: scale(1.05);
+}
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFC107, #e0a800);
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(255, 193, 7, 0.4);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.back-to-top-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  box-shadow: 0 6px 24px rgba(255, 193, 7, 0.6);
+  transform: translateY(-3px);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header {
@@ -342,45 +416,12 @@ footer .container {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
   }
-}
 
-/* Ajustes para exibir corretamente o endereço longo */
-.wallet-address {
-  font-family: 'Courier New', monospace;
-  font-size: 1.1rem; /* Aumentado para melhorar legibilidade */
-  background: #fff;
-  padding: 2rem; /* Aumentado de 1.5rem para 2rem para uma caixa maior */
-  border-radius: 10px; /* Aumentado para um visual mais suave */
-  border: 2px solid var(--primary); /* Adicionado borda para destaque */
-  word-break: break-all;
-  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra interna mais pronunciada */
-  margin-bottom: 1.5rem; /* Aumentado para espaçamento */
-  color: #333;
-  max-width: 100%;
-  text-align: center; /* Centralizado para melhor apresentação */
-}
-
-/* Ajuste na largura do card para evitar quebras de linha feias */
-.doacao-card {
-  width: 100%;
-  max-width: 300px;
-}
-
-/* QR Code */
-.qr-code {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.qr-image {
-  width: 160px;
-  height: 160px;
-  border: 2px solid var(--primary);
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease;
-}
-
-.qr-image:hover {
-  transform: scale(1.05);
+  .back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
 }
