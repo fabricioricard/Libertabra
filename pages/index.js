@@ -251,9 +251,10 @@ export default function Home() {
           line-height: 1.6;
         }
         .reunioes {
-          background: #1A3C34;
-          color: #fff;
-        }
+  background: #1A3C34;
+  color: #fff;
+  text-align: center;
+}
         .reunioes .section-tag {
           background: rgba(255,193,7,0.2);
         }
@@ -261,8 +262,9 @@ export default function Home() {
           color: #FFC107;
         }
         .reunioes .section-desc {
-          color: rgba(255,255,255,0.75);
-        }
+  color: rgba(255,255,255,0.75);
+  margin-inline: auto;
+}
         .protocolo-steps {
   display: flex;
   flex-direction: column;
@@ -297,11 +299,12 @@ export default function Home() {
           color: #fff;
         }
         .reunioes-sub {
-          font-size: 0.95rem;
-          color: rgba(255,255,255,0.6);
-          font-style: italic;
-          margin-top: 0.5rem;
-        }
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.6);
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
         .doacao {
           background: #f4f4f4;
           text-align: center;
