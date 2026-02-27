@@ -21,7 +21,7 @@ export default function Protocolo() {
       criterio: 'Tempo mínimo: 60 dias. Aprovação por votação de 2 Guardiões.',
     },
     {
-      nivel: 'Construtor',
+      nivel: 'Membro',
       icon: '🔨',
       desc: 'Membros aprovados',
       funcao: 'Participar ativamente, cumprir compromissos e contribuir com ideias e expansão.',
@@ -368,8 +368,13 @@ export default function Protocolo() {
 
         /* Reunião */
         .reuniao {
-          background: #f4f4f4;
-        }
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.reuniao .section-desc {
+  margin-inline: auto;
+}
         .etapas {
           display: flex;
           flex-direction: column;
@@ -427,9 +432,10 @@ export default function Protocolo() {
 
         /* Postura */
         .postura {
-          background: #1A3C34;
-          color: #fff;
-        }
+  background: #1A3C34;
+  color: #fff;
+  text-align: center;
+}
         .postura .section-tag {
           background: rgba(255,193,7,0.2);
         }
