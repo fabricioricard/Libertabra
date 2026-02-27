@@ -206,13 +206,23 @@ export default function Projeto() {
 
         /* Visão */
         .visao {
-          background: #fff;
-        }
+  background: #fff;
+  text-align: center;
+}
+
+.visao .section-desc {
+  margin-inline: auto;
+}
 
         /* Pilares */
         .pilares {
-          background: #f4f4f4;
-        }
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.pilares .section-desc {
+  margin-inline: auto;
+}
         .pilares-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -249,9 +259,10 @@ export default function Projeto() {
 
         /* Legalidade */
         .legalidade {
-          background: #1A3C34;
-          color: #fff;
-        }
+  background: #1A3C34;
+  color: #fff;
+  text-align: center;
+}
         .legalidade .section-tag {
           background: rgba(255,193,7,0.2);
         }
