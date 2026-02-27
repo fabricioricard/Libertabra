@@ -311,8 +311,12 @@ export default function Protocolo() {
 
         /* Hierarquia */
         .hierarquia {
-          background: #fff;
-        }
+  background: #fff;
+  text-align: center;
+}
+.hierarquia .section-desc {
+  margin-inline: auto;
+}
         .niveis-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
