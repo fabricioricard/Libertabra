@@ -95,7 +95,7 @@ export default function Home() {
             <span className="section-tag">Protocolo</span>
             <h2>Reuniões Semanais</h2>
             <p className="section-desc">
-              Realizamos reuniões presenciais a cada 7 dias,
+              Realizamos reuniões online/presenciais a cada 7 dias,
               seguindo o Protocolo Libertabra:
             </p>
             <div className="protocolo-steps">
@@ -264,12 +264,12 @@ export default function Home() {
           color: rgba(255,255,255,0.75);
         }
         .protocolo-steps {
-          display: flex;
-          flex-direction: column;
-          gap: 0.75rem;
-          margin: 1.5rem 0;
-          max-width: 480px;
-        }
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem auto;
+  max-width: 480px;
+}
         .protocolo-step {
           display: flex;
           align-items: center;
